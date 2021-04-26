@@ -2,21 +2,35 @@ import React from 'react';
 
 const HookComp = () => {
   // const [ counter, setCounter] = React.useState(0)
-   const [state, setState]= React.useState({
-      count :0,
-      isON :false
-  })
+//    const [state, setState]= React.useState({
+//       count :0,
+//       isON :false
+//   })
+
+const [count, setCount] = React.useState(0)
+const [isON, setIsON] = React.useState(false)
 
   const handleChange = () =>{
-      const {count, isON} = state
-      setState({
-          count : count +1 ,
-          isON : !isON
-      })
+    //   const {count, isON} = state
+    //   setState({
+    //       count : count +1 ,
+    //       isON : !isON
+    
+    //   })
+
+    //USING MUTLIPLE STATES
+
+    setCount(count+1);
+    setIsON(!isON);
+
+
+
+
+
   }
 
 //DESTRUCTURING THE STATE 
-const {count, isON} = state;
+//const {count, isON} = state;
 
     return (
         
