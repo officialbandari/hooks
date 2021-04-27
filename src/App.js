@@ -1,5 +1,6 @@
 import React from 'react';
-import ShortCircut from './components/ShortCircut';
+import BasicForm from './components/BasicForm';
+//import ShortCircut from './components/ShortCircut';
 // import ClassComp from './components/ClassComp';
 // import HookComp from './components/HookComp';
 // import TodoApp from './components/TodoApp';
@@ -11,7 +12,8 @@ const App = () => {
             {/* <ClassComp/>
             <HookComp/>
             <TodoApp/> */}
-            <ShortCircut />
+            {/* <ShortCircut /> */}
+            <BasicForm />
 
         </div>
     );
