@@ -28,7 +28,7 @@ import React, { Component } from 'react'
 
         const {isON, counter } = this.state
         return (
-            <div>
+            <div className="col-md-6">
                 <h3>{isON ? "ON": "OFF"}</h3>
                 <h4>{counter}</h4>
                 <button onClick={this.handleChange}>click me</button>
@@ -37,5 +37,6 @@ import React, { Component } from 'react'
         )
     }
 }
+
 
 export default ClassComp
