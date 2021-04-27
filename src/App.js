@@ -1,4 +1,5 @@
 import React from 'react';
+import UseEffect3 from './components/useEffects/UseEffect3';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
             {/* <Task1 /> */}
 
             {/* <UseEffectIfcondition /> */}
+            <UseEffect3 />
 
         </div>
     );
