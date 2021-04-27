@@ -10,9 +10,17 @@ const BasicForm = () => {
     const submitForm = (e) => {
         e.preventDefault()
 
-        const newEntry = { email: email, password: password };
-        setNewEntry([newEntry, ...allEntry]);
-        console.log(allEntry);
+        if (email && password) {
+            const newEntry = { id: new Date().getTime().toString(), email, password };
+            setNewEntry([...allEntry, newEntry]);
+            console.log(allEntry);
+
+            //input empty 
+            setEmail("");
+            setPassword("");
+        } else {
+            alert("Please enter a valid email and password")
+        }
 
 
     }
@@ -22,7 +30,7 @@ const BasicForm = () => {
         <>
 
             <form action="" className="" onSubmit={submitForm}>
-                <div>
+                <div className="" >
                     <label htmlFor="email"> Email</label>
                     <input
                         type="email"
@@ -56,8 +64,9 @@ const BasicForm = () => {
             <div>
                 {
                     allEntry.map(val => {
+                        const { id, email, password } = val;
                         return (
-                            <div key={val.email}>{val.email}{val.password}</div>
+                            <div key={id}>{email}{password}</div>
                         )
                     })
                 }

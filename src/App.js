@@ -1,5 +1,9 @@
 import React from 'react';
-import BasicForm from './components/BasicForm';
+import UseEffects1 from './components/useEffects/UseEffects1'
+
+
+
+//import BasicForm from './components/BasicForm';
 //import ShortCircut from './components/ShortCircut';
 // import ClassComp from './components/ClassComp';
 // import HookComp from './components/HookComp';
@@ -8,12 +12,18 @@ import BasicForm from './components/BasicForm';
 const App = () => {
     return (
         <div className="mainApp ">
-            <h1>Hello world</h1>
+            {/* <h1>Hello world</h1> */}
             {/* <ClassComp/>
             <HookComp/>
             <TodoApp/> */}
             {/* <ShortCircut /> */}
-            <BasicForm />
+            {/* <BasicForm /> */}
+
+            <UseEffects1 />
+
+
+
+
 
         </div>
     );
